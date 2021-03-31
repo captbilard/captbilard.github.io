@@ -5,24 +5,80 @@ html, body{
 
 
 .container{
+    border: 1px solid black;
     height: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)) ;
-    gap: 4px;
-    grid-template-areas: 
-        "h h h h h h h h h h h h"
-        "c c c c c c c c c c c c"
+    /* grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)) ; */
+    grid-template-columns: 40px 1fr 40px;
+    /* grid-template-rows: repeat(3, minmax(100px,100px));  */
+    gap: 10px;
+    /* grid-template-areas: 
+        "h h h h h h h h h h h ."
+        ". c c c c c c c c c . ."
         "f f f f f f f f f f f f";
+     */
+    
+}
+.container > *{
+    grid-column: 2;
+    min-width: 0;
 }
 
+
+
 .header{
-    grid-area: h;
+    /* grid-area: h; */
+    border: 3px solid green;
+    
 }
+.nav-list{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    
+}
+
+.nav-list > li{
+    float: left;
+}
+li a{
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+}
+a:link{
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+}
+  
+a:hover {
+    text-decoration: underline;
+}
+  
+a:active {
+    text-decoration: underline;
+}
+/* .header > div:nth-child(5){
+    margin-left: auto;
+    margin-right: 20px;
+}
+.header > div:nth-child(4){
+    margin-left: 75%;
+    margin-right: 5px;
+} */
+
+/* main content styling */
 .content{
-    grid-area: c;
+    /* grid-area: c; */
+    border: 3px solid blue;
 }
 .footer{
-    grid-area: f;
+    /* grid-area: f; */
+    border: 3px solid red;
 }
 
 .project-container{
@@ -30,10 +86,11 @@ html, body{
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     grid-auto-rows: 100px;
     gap: 5px;
+    
 
 }
 
 .project-container > div{
-    border: 3px solid lightskyblue;
+    border: 2px solid lightskyblue;
     border-radius: 5px;
 }
