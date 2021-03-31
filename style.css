@@ -5,12 +5,35 @@ html, body{
 
 
 .container{
+    height: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)) ;
     gap: 4px;
+    grid-template-areas: 
+        "h h h h h h h h h h h h"
+        "c c c c c c c c c c c c"
+        "f f f f f f f f f f f f";
 }
 
-.container > div{
+.header{
+    grid-area: h;
+}
+.content{
+    grid-area: c;
+}
+.footer{
+    grid-area: f;
+}
+
+.project-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-auto-rows: 100px;
+    gap: 5px;
+
+}
+
+.project-container > div{
     border: 3px solid lightskyblue;
     border-radius: 5px;
 }
