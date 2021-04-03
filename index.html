@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adebayo Osinulu</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
 </head>
 <body>
     <div class="container">
@@ -12,10 +13,10 @@
             <nav id="navbar" class="nav">
                 <ul class="nav-list">
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">About Me</a></li>
-                    <li><a href="#">Skills</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#about-section">About Me</a></li>
+                    <li><a href="#skills-section">Skills</a></li>
+                    <li><a href="#Projects">Projects</a></li>
+                    <li><a href="#Contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -33,8 +34,8 @@
             <!-- Skills Section -->
             <section id="skills-section">
                 <div class="skills">
-                    <p>My tech stack includes</p>
-                    <ul>
+                    <p>My tech stack includes...</p>
+                    <ul class="skills-list">
                         <li>Python</li>
                         <li>JavaScript</li>
                         <li>Django</li>
@@ -48,32 +49,59 @@
 
             <!-- Projects Section -->
             <section id="Projects">
+                <p>Projects have worked on includes</p>
                 <div class="project-container">
-                    <div>
-                        <h3>Change360</h3>
-                        <p>An NGO aimed at developing the next political generation</p>
+                    <div class="project-card">
+                        <img src="./400 x 300.png" alt="Change360 web image" class="project-card-image">
+                        <div class="project-card-content">
+                            <h3>Lorem Ipsum</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat exercitation ullamco.</p>
+                        </div>
+                        <div class="project-card-footer">
+                            <a href="./" class="project-link">Check it out</a>
+                        </div>
                     </div>
-                    <div>
-                        <h3>Change3602</h3>
-                        <p>An NGO aimed at developing the next political generation</p>
+
+                    <div class="project-card">
+                        <img src="./400 x 300.png" alt="Change360 web image" class="project-card-image">
+                        <div class="project-card-content">
+                            <h3>Lorem Ipsum</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat exercitation ullamco. </p>
+                        </div>
+                        <div class="project-card-footer">
+                            <a href="./" class="project-link">Check it out</a>
+                        </div>
                     </div>
-                    <div>
-                        <h3>Change3603</h3>
-                        <p>An NGO aimed at developing the next political generation</p>
+
+                    <div class="project-card">
+                        <img src="./400 x 300.png" alt="Bilards Blog Image" class="project-card-image">
+                        <div class="project-card-content">
+                            <h3>Lorem Ipsum</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris isi ut aliquip ex a commodo</p>
+                        </div>
+                        <div class="project-card-footer">
+                            <a href="./" class="project-link">Check it out</a>
+                        </div>
                     </div>
                 </div>
             </section>
 
             <!-- Contact Section -->
-            <section id="Contact">
-                <p>Reach out</p>
-                <p>You can reach out to me through any of my social media handles below if you want to talk about collaborating on a project or to just say hi,
-                </p>
-                <div id="social-media">
-                    <p>Mail</p>
-                    <p>twitter</p>
-                    <p>Phone</p>
-                    <p>github</p>
+            <section id="Contact" class="contact-section">
+                <div class="contact-header">
+                    <h3>Reach out</h3>
+                </div>
+                <div class="contact-text">
+                    <p>You can reach out to me through any of my social media handles below if you want to talk about collaborating on a project or to just say hi,
+                    </p>
+                </div>
+                <div class="social-media">
+                    <ul class="social-media-list">
+                        <li><i class="fas fa-envelope icons"> </i><a href="mailto:osinuluadebayo@gmail.com">Adebayo Osinulu</a></li>
+                        <li><i class="fab fa-twitter-square"></i><a href="https://twitter.com/captbilard">@captbilard</a></li>
+                        <li><i class="fab fa-github"></i><a href="https://github.com/captbilard">captbilard</a></li>
+                        <li><i class="fab fa-linkedin-in"></i><a href="https://www.linkedin.com/in/adebayo-osinulu-b9a377bb/">Adebayo Osinulu</a></li>
+                    </ul>
 
                 </div>
             </section>
@@ -81,7 +109,7 @@
 
         <!-- Footer Content -->
         <div class="footer">
-            <p>Designed by Adebayo Osinulu 2021</p>
+            <p>Designed by Adebayo Osinulu &#169; 2021</p>
         </div>
     </div>
 </body>
